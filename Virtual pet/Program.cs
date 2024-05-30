@@ -11,7 +11,7 @@ namespace virtualPetSimulator
             string petType = Console.ReadLine();
             Console.WriteLine("Enter pet name");
             string petName = Console.ReadLine();
-            Console.WriteLine("You have choosen pet type of "+ petType+" "+"and named the"+" "+ petType+" "+"as"+" "+petName);
+            Console.WriteLine("WELCOME! You have choosen pet type of "+ petType+" "+"and named the"+" "+ petType+" "+"as"+" "+petName);
             //Initialization of pet status
             int Hunger = 5;
             int Happiness = 5;
@@ -61,13 +61,13 @@ namespace virtualPetSimulator
                 //Critical warning
                 if(Hunger >=10)
                 {
-                    Console.WriteLine("Your pet is very hungry");
+                    Console.WriteLine("Warning! Your pet is very hungry");
                     Health -= 2;
                 }
                 //health deterioration  warning
                 if (Health <= 2)
                 {
-                    Console.WriteLine("Your pet's health has deteriorated and refusing to play.Please feed the pet as soon as possible.");
+                    Console.WriteLine("WARNING! Your pet's health has deteriorated and refusing to play.Please feed the pet as soon as possible.");
                 }
             }
            
